@@ -1,7 +1,9 @@
+import React,{useCallback} from 'react';
+import { useNavigate } from 'react-router';
 import { SearchOutlined, ShoppingCartOutlined} from '@ant-design/icons';
 import {AiTwotoneFire} from 'react-icons/ai'
-import React from 'react';
 import styled from 'styled-components';
+
 
 
 const Info=styled.div`
@@ -58,6 +60,7 @@ const Icon=styled.div`
     align-items:center;
     justify-content:center;
     margin:10px;
+    cursor:pointer;a
     transition:all 0.5s ease ; 
 
     &:hover{
@@ -70,6 +73,8 @@ const Icon=styled.div`
 
 
 const Product= ({item})=> {
+    const navigate = useNavigate();
+    const handleOnClick = useCallback(() => navigate('/products/123', {replace: true}), [navigate]);
   return (
     <Container>
         <Circle/>
@@ -78,7 +83,7 @@ const Product= ({item})=> {
             <Icon>
                 <ShoppingCartOutlined/>
             </Icon>
-            <Icon>
+            <Icon onClick={handleOnClick}>
                 <SearchOutlined/>
             </Icon>
             <Icon>

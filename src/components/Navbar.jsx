@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import {ShoppingCartOutlined} from '@ant-design/icons';
 import { Badge } from '@mui/material';
+import { useCallback } from 'react';
+import { useNavigate } from 'react-router';
 
 
 
@@ -54,6 +56,7 @@ const Center = styled.div`
 
 const Logo = styled.h1`
   font-weight: bold;
+  cursor:pointer;
 
   
 `;
@@ -78,6 +81,8 @@ const MenuItem = styled.div`
 
 
 function Navbar() {
+  const navigate = useNavigate();
+const handleOnClick = useCallback(() => navigate('/', {replace: true}), [navigate]);
   return (
     <Container>
         <Wrapper>
@@ -89,7 +94,7 @@ function Navbar() {
                 </SearchContainer>
             </Left>
             <Center>
-                <Logo>E-Commerce</Logo>
+                <Logo onClick={handleOnClick}>E-Commerce</Logo>
             </Center>
             <Right><MenuItem>Register</MenuItem>
                 <MenuItem>Signin</MenuItem>

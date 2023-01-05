@@ -112,7 +112,7 @@ const Product = () => {
         <Announcement/>
         <Wrapper>
             <ImgContainer>
-                <Image src=""></Image>
+                <Image src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNoaXJ0fGVufDB8fDB8fA%3D%3D&w=1000&q=80"></Image>
             </ImgContainer>
             <InfoContainer>
                 <Title> Image</Title>
