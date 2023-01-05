@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect,} from 'react'
 import { popularProducts } from '../data';
 import styled from 'styled-components';
 import Product from './Product';
@@ -12,8 +12,8 @@ flex-wrap: wrap;
 justify-content:space-between;
 `;
 const Products=({cat,filters,sort})=> {
-  const [products,setProducts]=useState([]);
-  const[filteredProducts,setFilteredProducts]=useState([]);
+  
+  
 
   useEffect(()=>{
     const getProducts=async ()=>{
