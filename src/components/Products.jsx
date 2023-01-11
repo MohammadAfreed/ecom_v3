@@ -21,7 +21,9 @@ const Products=({cat,filters,sort})=> {
         const res=await axios.get("http://localhost:3000/products");
         console.log(res);
 
-      }catch(err){};
+      }catch(err){
+        console.log(err);
+      };
     };
     getProducts();
 

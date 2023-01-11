@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router';
 import { SearchOutlined, ShoppingCartOutlined} from '@ant-design/icons';
 import {AiTwotoneFire} from 'react-icons/ai'
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 
 
@@ -81,7 +82,10 @@ const Product= ({item})=> {
         <Image src={item.img}/>
         <Info>
             <Icon>
+                <Link to={"/cart"}>
                 <ShoppingCartOutlined/>
+                </Link>
+                
             </Icon>
             <Icon onClick={handleOnClick}>
                 <SearchOutlined/>

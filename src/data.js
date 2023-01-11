@@ -50,7 +50,7 @@ export const sliderItems = [
     },
     {
       id:2,
-      img:"https://cdn.shopify.com/s/files/1/0101/4832/products/Angela_Natural_Tee.png?v=1606780388",
+      img:"https://5.imimg.com/data5/ANDROID/Default/2020/12/GB/FH/MN/69548664/6f29894b37fb92b0c5bd3f855be56d34-jpg-500x500.jpg",
     },
     {
       id:3,
@@ -58,7 +58,7 @@ export const sliderItems = [
     },
     {
       id:4,
-      img:"https://www.burdastyle.com/pub/media/catalog/product/cache/7bd3727382ce0a860b68816435d76e26/107/BUS-PAT-BURTE-1320516/1170x1470_BS_2016_05_132_front.png",
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ_AZsKFMw9elVDpmxsT7YkeTjjIaXUcaitg&usqp=CAU",
     },
     {
       id:5,
@@ -70,7 +70,7 @@ export const sliderItems = [
     },
     {
       id:7,
-      img:"https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+      img:"https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/1320929/2019/5/31/bd91806e-374d-47df-b231-c296643dd2841559282905641-WROGN-Men-Black-Slim-Fit-Mid-Rise-Jeans-7121559282904321-1.jpg",
     },
     {
       id:8,

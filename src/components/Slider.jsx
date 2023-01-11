@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import styled from 'styled-components';
 import { ArrowLeftOutlined,ArrowRightOutlined } from '@ant-design/icons';
 import {sliderItems} from '../data.js';
+import { Link } from 'react-router-dom';
 
 
 const Container=styled.div`
@@ -56,7 +57,8 @@ flex:1;
 padding:50px;
 `;
 
-const Title=styled.h1``
+const Title=styled.h1`
+font-size:70px;`
 const Desc=styled.p`
 margin:50px 0px;
 font-size:20px;
@@ -97,7 +99,10 @@ function Slider() {
                     <InfoContainer>
                         <Title>{item.title}</Title>
                         <Desc>{item.desc}</Desc>
+                        <Link to={"/productlist/men"}>
                         <Button>Show Now</Button>
+                        </Link>
+                        
                     </InfoContainer>
                     </Slide>
                     

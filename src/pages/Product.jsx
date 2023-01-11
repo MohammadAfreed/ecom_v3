@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import { Newsletter } from "../components/Newsletter";
 import { Add } from "@mui/icons-material";
 import { Remove } from "@mui/icons-material";
+import { Link } from "react-router-dom";
 
 const Container=styled.div``;
 const Wrapper=styled.div`
@@ -142,7 +143,10 @@ const Product = () => {
                         <Amount>1</Amount>
                         <Add/>
                     </AmountContainer>
+                    <Link to={"/cart"}>
                     <Button>Add to Cart</Button>
+                    </Link>
+                    
                 </AddContainer>
 
             </InfoContainer>

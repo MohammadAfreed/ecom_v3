@@ -73,7 +73,7 @@ const Right = styled.div`
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
-  margin-left: 25px;
+  margin-left: 30px;
   padding:5px;
 
 `;
@@ -83,6 +83,7 @@ const MenuItem = styled.div`
 function Navbar() {
   const navigate = useNavigate();
 const handleOnClick = useCallback(() => navigate('/', {replace: true}), [navigate]);
+const handleOnClick1 = useCallback(() => navigate('/cart', {replace: true}), [navigate]);
   return (
     <Container>
         <Wrapper>
@@ -96,18 +97,20 @@ const handleOnClick = useCallback(() => navigate('/', {replace: true}), [navigat
             <Center>
                 <Logo onClick={handleOnClick}>E-Commerce</Logo>
             </Center>
-            <Right><MenuItem>Register</MenuItem>
-                <MenuItem>Signin</MenuItem>
+            <Right>
+              <MenuItem>Register</MenuItem>
+              <MenuItem>Signin</MenuItem>
                 
-                    <Badge badgeContent={4} color="primary">
-                      <ShoppingCartOutlined/>
-                    </Badge>
+              <Badge badgeContent={4} color="primary" onClick={handleOnClick1}>
+               <ShoppingCartOutlined/>
+              </Badge>
+
             </Right>
             
             
             </Wrapper>
        
-    </Container>
+      </Container>
   )
 }
 
